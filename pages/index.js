@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
-import StartCard from "./components/StartCard";
-import QuestionCard from "./components/QuestionCard";
-import ResultCard from "./components/ResultCard";
+import StartCard from "./components/startCard";
+import QuestionCard from "./components/questionCard";
+import ResultCard from "./components/resultCard";
 
 export default function Home() {
   const [step, setStep] = useState("start");
