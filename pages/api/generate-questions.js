@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 import clientPromise from './helpers/mongo';
-import QuestionService from '../model/questionService';
+import QuestionService from './model/questionService';
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).end();
