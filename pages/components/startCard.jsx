@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function StartCard({ onStart, loading }) {
+export default function StartCard({ onStart= () => {}, loading =false}) {
   const [showLogin, setShowLogin] = useState(false);
   const [email, setEmail] = useState("");
   const router = useRouter();

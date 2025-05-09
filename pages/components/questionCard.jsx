@@ -1,18 +1,18 @@
 import HintButton from "./hintMenu";
 
 export default function QuestionCard({
-  question,
-  choices,
-  correctAnswer,
-  selectedAnswer,
-  onAnswerSelect,
-  onSubmit,
-  onNext,
-  currentIndex,
-  total,
-  hasSubmitted,
-  isCorrect,
-  isSubmitting,
+  question ={},
+  choices =[],
+  correctAnswer="",
+  selectedAnswer="",
+  onAnswerSelect= () => {},
+  onSubmit= () => {} ,
+  onNext = () => {},
+  currentIndex=0,
+  total=0,
+  hasSubmitted= () => {},
+  isCorrect=false,
+  isSubmitting=false,
 }) {
   return (
     <div className="bg-[#fff3eb] text-[#5B6427] rounded-2xl shadow-lg p-8 w-[90%] max-w-md text-center">

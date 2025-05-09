@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function GenerateQuestionsModal({ onClose }) {
+export default function GenerateQuestionsModal({ onClose = () => {} }) {
   const [count, setCount] = useState(5);
   const [loading, setLoading] = useState(false);
   const [successMsg, setSuccessMsg] = useState("");

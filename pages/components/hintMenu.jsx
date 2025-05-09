@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function HintButton({ question }) {
+export default function HintButton({ question = {} }) {
   const [open, setOpen] = useState(false);
   const [hint, setHint] = useState(null);
   const [loading, setLoading] = useState(false);

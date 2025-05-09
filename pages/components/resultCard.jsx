@@ -1,4 +1,4 @@
-export default function ResultCard({ score, total, onRetry }) {
+export default function ResultCard({ score=0, total=0, onRetry= () => {} }) {
   const percentage = Math.round((score / total) * 100);
 
   return (
