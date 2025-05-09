@@ -36,7 +36,7 @@ export default function Home() {
   };
 
   const [hasSubmitted, setHasSubmitted] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(null); // true/false from API
+  const [isCorrect, setIsCorrect] = useState(null);
 
   const handleSubmit = async () => {
     if (!selectedAnswer || isSubmitting) return;
@@ -54,7 +54,7 @@ export default function Home() {
         }),
       });
 
-      const data = await res.json(); // Expect: { correct: true/false }
+      const data = await res.json();
 
       setIsCorrect(data.correct);
       if (data.correct) {

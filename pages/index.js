@@ -36,7 +36,7 @@ export default function Home() {
   };
 
   const [hasSubmitted, setHasSubmitted] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(null); // true/false from API
+  const [isCorrect, setIsCorrect] = useState(null);
 
   const handleSubmit = async () => {
     if (!selectedAnswer || isSubmitting) return;
