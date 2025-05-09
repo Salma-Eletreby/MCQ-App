@@ -123,8 +123,10 @@ You can start editing the homepage by modifying `pages/index.js`. The page auto-
 
 API routes live under `pages/api` and can be accessed via:
 
-- [http://localhost:3000/api/hello](http://localhost:3000/api/hello) (sample)
-- [http://localhost:3000/api/questions](http://localhost:3000/api/questions) (your custom routes)
+- [http://localhost:3000/api/questions](http://localhost:3000/api/questions)
+- [http://localhost:3000/api/questions](http://localhost:3000/api/answers)
+- [http://localhost:3000/api/questions](http://localhost:3000/api/hint)
+- [http://localhost:3000/api/questions](http://localhost:3000/api/generate-questions)
 
 Learn more here: [API routes documentation](https://nextjs.org/docs/pages/building-your-application/routing/api-routes)
 
